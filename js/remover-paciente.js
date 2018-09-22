@@ -6,7 +6,7 @@ var tabela = document.querySelector('table');
 tabela.addEventListener('dblclick', function(event){
  event.target.parentNode.classList.add('fadeout');
  
-  //event.target.parentNode.remove();
+  event.target.parentNode.remove();
 });
 //pacientes.forEach(function(paciente){
   //    paciente.addEventListener('dblclick', function(){
