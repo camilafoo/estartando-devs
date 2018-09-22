@@ -5,8 +5,10 @@ var tabela = document.querySelector('table');
 
 tabela.addEventListener('dblclick', function(event){
  event.target.parentNode.classList.add('fadeout');
- 
-  event.target.parentNode.remove();
+ setTimeout(function(){
+   event.target.parentNode.remove();
+ },1000);
+  
 });
 //pacientes.forEach(function(paciente){
   //    paciente.addEventListener('dblclick', function(){
